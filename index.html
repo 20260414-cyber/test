@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시험 불안 해소</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <p id="message">🍀 시험 불안 해소해주는 행운 거북이 🍀</p>
+    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+
+    <script>
+        function showRandomMessage() {
+            const messages = [
+                "지금까지 충분히 잘 해왔어",
+                "결과보다 중요한 건, 지금 이 순간의 너의 노력이야",
+                "너 자신을 믿어봐!",
+                "실수해도 괜찮아! 그것도 성장의 과정이야",
+                "넌 해낼 수 있어!"
+            ];
+            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+        }
+    </script>
+</body>
+</html>
 
